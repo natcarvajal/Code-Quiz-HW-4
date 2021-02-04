@@ -76,6 +76,13 @@ button {
   transform: scale(15);
   color: black;
 }
+.results {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16pt;
+  color: whitesmoke;
+  padding-top: 1rem;
+  margin-left: 3rem;
+}
 
 h3,
 .time-left {

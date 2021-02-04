@@ -37,6 +37,7 @@ $(".start-quiz").click(function () {
 });
 var secondsLeft = 30;
 var currentQuestions = 0;
+var score = 100;
 function displayQuestions() {
   $(".jumbotron").html(`<div>${questions[currentQuestions].question}</div>
   <button class="quest">${questions[currentQuestions].answer1}</button class="quest"><br>
@@ -45,9 +46,9 @@ function displayQuestions() {
   <button class="quest">${questions[currentQuestions].answer4}</button class="quest"><br>`);
   $("button").click(function (event) {
     if (event.target.innerText === questions[currentQuestions].correct) {
-      alert("CORRECT!");
+      $(".results").html(`<h5>CORRECT <i class="fas fa-check"></i></h5>`);
     } else {
-      alert("INCORRECT!");
+      $(".results").html(`<h5>INCORRECT <i class="fas fa-times"></i></h5>`);
       secondsLeft -= 10;
     }
     if (questions.length - 1 > currentQuestions) {
