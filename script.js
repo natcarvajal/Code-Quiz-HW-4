@@ -30,6 +30,14 @@ var questions = [
     answer4: "None of the above",
     correct: "equal value and equal type",
   },
+  {
+    question: "What is NOT datatype in javascript?",
+    answer1: "a string",
+    answer2: "an integer",
+    answer3: "an object",
+    answer4: "an array",
+    correct: "an array",
+  },
 ];
 $(".start-quiz").click(function () {
   displayQuestions();
@@ -37,7 +45,7 @@ $(".start-quiz").click(function () {
 });
 var secondsLeft = 30;
 var currentQuestions = 0;
-var score = 100;
+var score = 0;
 function displayQuestions() {
   $(".jumbotron").html(`<div>${questions[currentQuestions].question}</div>
   <button class="quest">${questions[currentQuestions].answer1}</button class="quest"><br>
@@ -47,6 +55,7 @@ function displayQuestions() {
   $("button").click(function (event) {
     if (event.target.innerText === questions[currentQuestions].correct) {
       $(".results").html(`<h5>CORRECT <i class="fas fa-check"></i></h5>`);
+      score += 25;
     } else {
       $(".results").html(`<h5>INCORRECT <i class="fas fa-times"></i></h5>`);
       secondsLeft -= 10;
@@ -55,7 +64,7 @@ function displayQuestions() {
       currentQuestions++;
       displayQuestions();
     } else {
-      $(".jumbotron").html(`<div class="end"> High Scores </div>`);
+      $(".jumbotron").html(`<div class="end"> Score = ${score} </div>`);
     }
   });
 }
