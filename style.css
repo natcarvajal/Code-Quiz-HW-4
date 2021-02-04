@@ -28,8 +28,7 @@ body {
 }
 button:hover,
 .btn:hover {
-  background-color: transparent;
-  color: whitesmoke;
+  transform: scale(1.2);
 }
 .jumbotron {
   margin-top: 4rem;
@@ -48,6 +47,42 @@ button {
   font-size: 16pt;
   padding: 1% 1%;
   border-radius: 20%;
+}
+.high-score {
+  float: right;
+  margin-top: -2rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16pt;
+  color: whitesmoke;
+  text-decoration: none;
+}
+.high-score:hover {
+  transform: scale(1.5);
+  color: black;
+}
+.home {
+  border-radius: 10%;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background: whitesmoke;
+  color: #b853c1;
+  border: none;
+  font-size: 16pt;
+  padding: 0.5% 0.5%;
+  border-radius: 20%;
+}
+.home:hover {
+  transform: scale(15);
+  color: black;
+}
+
+h3,
+.time-left {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16pt;
+  color: whitesmoke;
+  padding-top: 1rem;
 }
 
 .end {

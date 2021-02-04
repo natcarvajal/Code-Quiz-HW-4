@@ -35,6 +35,7 @@ $(".start-quiz").click(function () {
   displayQuestions();
   setTime();
 });
+var secondsLeft = 30;
 var currentQuestions = 0;
 function displayQuestions() {
   $(".jumbotron").html(`<div>${questions[currentQuestions].question}</div>
@@ -46,6 +47,7 @@ function displayQuestions() {
     if (event.target.innerText === questions[currentQuestions].correct) {
       alert("CORRECT!");
     } else {
+      alert("INCORRECT!");
       secondsLeft - 10;
     }
     if (questions.length - 1 > currentQuestions) {
@@ -62,9 +64,7 @@ function displayQuestions() {
 //         4 answer
 //         timer running
 var timeEl = document.querySelector(".time-left");
-var mainEl = document.getElementById("main");
-
-var secondsLeft = 60;
+var highEl = document.getElementById(".high-score");
 
 function setTime() {
   var timerInterval = setInterval(function () {
@@ -79,7 +79,7 @@ function setTime() {
 }
 
 function sendMessage() {
-  timeEl.textContent = " ";
+  timeEl.textContent = alert("Times Up!");
 
   var imgEl = document.createElement("img");
 
