@@ -48,7 +48,7 @@ function displayQuestions() {
       alert("CORRECT!");
     } else {
       alert("INCORRECT!");
-      secondsLeft - 10;
+      secondsLeft -= 10;
     }
     if (questions.length - 1 > currentQuestions) {
       currentQuestions++;
