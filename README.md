@@ -1,16 +1,17 @@
 # Code-Quiz-HW-4
 
+## Purpose: 
 
+This week’s homework required us to build a timed coding quiz with multiple-choice questions. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface. This week’s coursework will teach you all the skills you need to succeed in this assignment.
 
-
-## Purpose: ##
+## User Story:
 
 AS A coding boot camp student<br>
 I WANT to take a timed quiz on JavaScript fundamentals that stores high scores<br>
 SO THAT I can gauge my progress compared to my peers<br>
 
 
-## Criteria Includes: ##
+## Acceptance Criteria:
 
 GIVEN I am taking a code quiz
 * WHEN I click the start button
@@ -26,15 +27,15 @@ GIVEN I am taking a code quiz
 
 
   
-  ## Image of Work Day Scheduler: ##
+  ## Image of Work Day Scheduler: 
   
   ![main page of the Code Quiz](image/code-quiz.png)
   
   
- ## Languages Used: ##
+ ## Languages Used: 
   
       HTML, CSS, Bootstrap, JavaScript,  
       
- ## Deployed Sites ##
+ ## Deployed Sites:
 * [Github Repo]()
 * [Deployed Link]()
