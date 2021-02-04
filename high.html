@@ -26,21 +26,34 @@
     </div>
     <div class="jumbotron text-center">
       <h1 class="display-4"><strong>High Scores!</strong></h1>
-      <form class="form-inline">
-        <div class="form-group mx-sm-3 mb-2">
-          <label for="inputPassword2" class="sr-only">Enter</label>
-          <input
-            type="name"
-            class="form-control"
-            id="Enter"
-            placeholder="Enter Initials"
-          />
-        </div>
-        <button type="submit" class="btn btn mb-2">Save</button>
-        <a class="home" href="./index.html " role="button"
-          ><i class="fas fa-home fa-s"></i>
-        </a>
-      </form>
+      <table class="table table">
+        <thead>
+          <tr>
+            <th scope="col">Initials</th>
+            <th scope="col">Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="clear" type="submit" class="btn btn mb-2">
+        Clear Scores
+      </button>
+      <a class="home" href="./index.html " role="button"
+        ><i class="fas fa-home fa-s"></i>
+      </a>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"

@@ -91,7 +91,24 @@ h3,
   color: whitesmoke;
   padding-top: 1rem;
 }
-
+.table {
+  width: 50%;
+  height: 70px;
+  text-align: center;
+  padding: 15px;
+  margin-left: 22rem;
+}
+th {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18pt;
+  color: whitesmoke;
+}
+td {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14pt;
+  color: whitesmoke;
+  height: 30px;
+}
 .end {
   font-size: 56pt;
 }

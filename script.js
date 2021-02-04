@@ -43,7 +43,7 @@ $(".start-quiz").click(function () {
   displayQuestions();
   setTime();
 });
-var secondsLeft = 30;
+var secondsLeft = 40;
 var currentQuestions = 0;
 var score = 0;
 function displayQuestions() {
@@ -64,7 +64,23 @@ function displayQuestions() {
       currentQuestions++;
       displayQuestions();
     } else {
-      $(".jumbotron").html(`<div class="end"> Score = ${score} </div>`);
+      $(".jumbotron").html(`<div class="end"> Score = ${score} </div>
+      <form class="form-inline">
+        <div class="form-group mx-sm-3 mb-2">
+          <label class="sr-only">Enter</label>
+          <input
+            type="text"
+            class="form-control"
+            id="enter"
+            placeholder="Enter Initials"
+          />
+          <p id="text"></p>
+        </div>
+        <button id = "save" type="submit" class="btn btn mb-2">Save</button>
+        <a class="home" href="./index.html " role="button"
+          ><i class="fas fa-home fa-s"></i>
+        </a>
+      </form>`);
     }
   });
 }
@@ -83,19 +99,21 @@ function setTime() {
 
     if (secondsLeft === 0) {
       clearInterval(timerInterval);
-      sendMessage();
+      // sendMessage();
     }
   }, 1000);
 }
 
-function sendMessage() {
-  timeEl.textContent = alert("Times Up!");
+// function sendMessage() {
+//   timeEl.textContent = $(".jumbotron").html(
+//     `<div class= "time-up"></div> Times Up <i class="fas fa-hourglass-end"></i></div>`
+//   );
 
-  var imgEl = document.createElement("img");
+//   var imgEl = document.createElement("img");
 
-  imgEl.setAttribute("src", "images/image_1.jpg");
-  mainEl.appendChild(imgEl);
-}
+//   imgEl.setAttribute("src", "images/image_1.jpg");
+//   mainEl.appendChild(imgEl);
+// }
 
 //             if wrong answer
 //                 display wrong and remove time by 10 seconds
