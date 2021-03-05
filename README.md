@@ -37,5 +37,5 @@ GIVEN I am taking a code quiz
       HTML, CSS, Bootstrap, JavaScript,  
       
  ## Deployed Sites:
-* [Github Repo]()
+* [Github Repo](https://github.com/natcarvajal/Code-Quiz-HW-4)
 * [Deployed Link]()
